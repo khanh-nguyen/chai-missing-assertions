@@ -1,6 +1,6 @@
 {
   "name": "chai-missing-assertions",
-  "version": "0.1.0",
+  "version": "0.1.3-0",
   "description": "Chai plugin to throw errors when you attept to use undefined assertions.",
   "main": "./lib/chai-missing-assertions.js",
   "scripts": {
@@ -21,9 +21,6 @@
   },
   "license": "MIT",
   "author": "Nowell Strite <nowell.strite@opower.com>",
-  "peerDependencies": {
-    "chai": "~1"
-  },
   "devDependencies": {
     "mocha": "~1.16.2",
     "coffee-script": "~1.6.2",
