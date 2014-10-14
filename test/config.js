@@ -1,6 +1,9 @@
+'use strict';
+
 var chai = require('chai'),
     chaiAsPromised = require('chai-as-promised'),
     sinonChai = require('sinon-chai'),
+    chaiMissingAssertions = require('../index'),
     sinon = require('sinon'),
     Q = require('q');
 
@@ -10,7 +13,7 @@ chai.should();
 
 chai.use(sinonChai);
 
-chai.use(require('../lib/chai-missing-assertions'));
+chai.use(chaiMissingAssertions);
 
 // Leave chai-as-promised loading after our plugin to ensure that we still tie
 // into plugins that are loaded after we are.
@@ -61,8 +64,8 @@ global.shouldPass = function (promiseProducer) {
 };
 
 global.shouldFail = function (options) {
-    var promiseProducer = options.op;
-    var desiredMessageSubstring = options.message;
+    var promiseProducer = options.op,
+        desiredMessageSubstring = options.message;
 
     it('should return a promise rejected with an assertion error', function (done) {
         promiseProducer().then(function () {

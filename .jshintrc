@@ -1,8 +1,39 @@
 {
-    "node": true,
-    "expr": true,
-    "predef": [
-      "it",
-      "describe"
+    // Enforcing
+    "bitwise"       : true,    // true: Prohibit bitwise operators (&, |, ^, etc.)
+    "camelcase"     : true,    // true: Identifiers must be in camelCase
+    "curly"         : true,    // true: Require {} for every new block or scope
+    "eqeqeq"        : true,    // true: Require triple equals (===) for comparison
+    "immed"         : true,    // true: Require immediate invocations to be wrapped in parens e.g. `(function () { } ());`
+    "indent"        : true,    // {int} Number of spaces to use for indentation
+    "newcap"        : true,    // true: Require capitalization of all constructor functions e.g. `new F()`
+    "noarg"         : true,    // true: Prohibit use of `arguments.caller` and `arguments.callee`
+    "noempty"       : true,    // true: Prohibit use of empty blocks
+    "nonew"         : true,    // true: Prohibit use of constructors for side-effects (without assignment)
+    "plusplus"      : true,    // true: Prohibit use of `++` & `--`
+    "quotmark"      : true,    // Quotation mark consistency:
+                                    // false    : do nothing (default)
+                                    // true     : ensure whatever is used is consistent
+                                    // "single" : require single quotes
+                                    // "double" : require double quotes
+    "undef"         : true,    // true: Require all non-global variables to be declared (prevents global leaks)
+    "unused"        : true,    // true: Require all defined variables be used
+    "strict"        : true,    // true: Requires all functions run in ES5 Strict Mode
+    "trailing"      : true,    // true: Prohibit trailing whitespaces
+
+    // Relaxing
+    "proto"         : true,      // true: Tolerate using the `__proto__` property
+
+    // Environments
+    "node"          : true,      // Node.js
+
+    // Legacy
+    "onevar"        : true,      // true: Allow only one `var` statement per function
+    "indent"        : 4,
+
+    // Custom Globals
+    "predef"        : [
+        "it",
+        "describe"
     ]
 }

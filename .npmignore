@@ -1,3 +1,5 @@
 /test/
 /.jshintrc
 /.coverignore
+/.coverage_data/
+/cover_html/
