@@ -1,4 +1,4 @@
-chai-missing-assertions [![Build Status](http://jenkins-dev.va.opower.it/job/x-web/job/chai-missing-assertions-MASTER/badge/icon)](http://jenkins-dev.va.opower.it/job/x-web/job/chai-missing-assertions-MASTER/)
+chai-missing-assertions
 =======================
 
 Chai plug-in to throw errors when you attempt to use undefined assertions.
